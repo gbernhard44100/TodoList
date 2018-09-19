@@ -1,0 +1,15 @@
+-
+    username: user_1
+    email: user_1@gmail.com
+    password: $2y$10$Sw3rlHuWXfzCFrHo7l8ECuD0O6r8QQxu3iL3aW0.vpuOZ1LOfJ2i2
+    role: ROLE_USER
+-
+    username: user_2
+    email: user_2@gmail.com
+    password: $2y$10$9QehUC.m/k8Tk3zHp/4OnO0Ggu.LDeV6EeNOhjXLBhYH2yQYsU7ea
+    role: ROLE_USER
+-   
+    username: admin
+    email: admin@gmail.com
+    password: $2y$10$WjxahAI/PeOnmDY17kVlCu8q7J9If98aIyJIVgYxRQEqi67.Kr3c.
+    role: ROLE_ADMIN

@@ -27,10 +27,10 @@ class TaskController extends Controller
         $form = $this->createForm(TaskType::class, $task);
 
         $form->handleRequest($request);
-
+        
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-
+            $task->setUser($this->getUser());
             $em->persist($task);
             $em->flush();
 
@@ -83,12 +83,14 @@ class TaskController extends Controller
      */
     public function deleteTaskAction(Task $task)
     {
-        $em = $this->getDoctrine()->getManager();
-        $em->remove($task);
-        $em->flush();
-
-        $this->addFlash('success', 'La tâche a bien été supprimée.');
-
+        if($this->getUser() === $task->getUser() || ($this->getUser()->getRoles() === array('ROLE_ADMIN') && $task->getUser() === null)) {
+            $em = $this->getDoctrine()->getManager();
+            $em->remove($task);
+            $em->flush();
+            $this->addFlash('success', 'La tâche a bien été supprimée.');
+            return $this->redirectToRoute('task_list');
+        }
+        $this->addFlash('error', 'Vous n\'avez pas les autorisations pour supprimer cette tâche.');
         return $this->redirectToRoute('task_list');
     }
 }

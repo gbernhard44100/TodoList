@@ -1,0 +1,74 @@
+-
+    title: 'Établir une liste des personnes à inviter'
+    content: >
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quam eros,
+        commodo at ex sit amet, ultricies aliquet purus. Phasellus nec felis eu risus dapibus auctor.
+        Duis mattis sit amet tortor id dictum. Donec quis consequat leo. Donec a rutrum nibh.
+        Duis pulvinar eros libero, in viverra odio finibus at. Mauris sit amet risus a tellus pulvinar pellentesque.
+        Etiam id libero lobortis magna blandit suscipit. Proin ornare, ipsum id bibendum congue,
+        libero felis tempor nunc, non scelerisque diam mauris id magna.
+        Vestibulum pharetra imperdiet velit, vel convallis tortor blandit sed. Sed consectetur semper volutpat.'
+    datetime: 2018-05-05 18:10:27
+    user_id: null
+-
+    title: 'Gérer les invitations : rédaction, présentation et envoi'
+    content: >
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit elementum convallis.
+        Curabitur viverra libero ut erat iaculis, et tincidunt elit auctor. Suspendisse quis euismod lorem.
+        Nulla commodo urna ac dolor molestie, quis rutrum nisi tempus. Fusce at fermentum quam. Aliquam erat volutpat.
+        Curabitur tincidunt efficitur orci, sit amet volutpat.'
+    datetime: 2018-05-05 15:55:27
+    user_id: null
+-
+    title: 'Envoyer une lettre d’appel d’offres aux traiteurs'
+    content: >
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum lobortis tortor at viverra.
+        Cras eu tellus ac quam lacinia lobortis. Aenean commodo convallis purus in suscipit.
+        Sed egestas, leo eget ultricies pellentesque, augue urna dignissim enim, at commodo purus elit in nisl.
+        Phasellus dictum placerat mollis. Ut volutpat faucibus.'
+    datetime:
+    user_id: null
+-
+    title: 'Louer du mobilier (tables/chaises)'
+    content: >
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget luctus quam, et fermentum arcu.
+        Curabitur magna eros, gravida sit amet turpis ac, tincidunt tincidunt mi. Curabitur lacinia consectetur elit eu tempus.
+        In bibendum nunc eu diam elementum hendrerit. Praesent pretium mauris quis sapien ultrices vulputate.
+        Curabitur in arcu blandit.'
+    datetime: 2018-05-04 23:30:27
+    user_id: null
+-
+    title: 'Dépouiller les coupons-réponses'
+    content: >
+        'Sed a rutrum quam. Nam ac ligula sed ligula gravida pulvinar. Mauris nec laoreet sem.
+        Quisque facilisis, turpis ac viverra fringilla, massa nulla placerat risus, nec placerat lacus justo vitae quam.
+        Sed elementum, ex vitae maximus gravida, felis.'
+    datetime: 2018-05-04 16:16:27
+    user_id: null
+-
+    title: 'Réceptionner les offres et choisir le traiteur (les traiteurs doivent être prévenus)'
+    content: >
+        'Phasellus sed accumsan massa, vitae pretium felis. Etiam elit quam, pellentesque vitae commodo nec, blandit vel mi.
+        Nullam quam justo, fermentum in sapien at, fringilla fermentum.'
+    datetime: 2018-05-04 14:00:27
+    user_id: 1
+-
+    title: 'Confirmer au traiteur le nombre de personnes présentes'
+    content: >
+        'Nunc laoreet volutpat felis, nec commodo erat posuere eget. Maecenas tempor leo vitae faucibus porttitor.
+        Phasellus fermentum quis tortor id.'
+    datetime: 2018-05-03 22:16:27
+    user_id: 1
+-
+    title: 'Préparer la salle de réception'
+    content: >
+        'Ut quis bibendum dolor. Phasellus nec tempus diam.'
+    datetime: 2018-05-03 21:05:41
+    user_id: 2
+-
+    title: 'Evenement'
+    content: >
+        'Cras bibendum ante sit amet nunc consectetur faucibus. Nam a viverra augue, at euismod odio.
+        Nunc lobortis tellus vel augue commodo, iaculis luctus sapien congue.'
+    datetime: 2018-05-03 19:20:41
+    user_id: 3

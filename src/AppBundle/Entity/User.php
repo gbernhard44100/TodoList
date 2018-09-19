@@ -38,6 +38,11 @@ class User implements UserInterface
      * @Assert\Email(message="Le format de l'adresse n'est pas correcte.")
      */
     private $email;
+    
+    /**
+     * @ORM\Column(name="roles", type="array")
+     */
+    private $roles = array();
 
     public function getId()
     {
@@ -81,7 +86,15 @@ class User implements UserInterface
 
     public function getRoles()
     {
-        return array('ROLE_USER');
+        return $this->roles;
+    }
+    
+    public function setRoles($roles)
+    {
+        if(!is_array($roles)){
+            $roles = array($roles);
+        }
+        $this->roles = $roles;
     }
 
     public function eraseCredentials()

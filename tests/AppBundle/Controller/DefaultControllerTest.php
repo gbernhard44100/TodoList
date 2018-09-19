@@ -6,13 +6,24 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class DefaultControllerTest extends WebTestCase
 {
+    private $connectedClient;
+    
+    public function setUp()
+    {
+        $this->connectedClient = self::createClient();
+        $crawler = $this->connectedClient->request('GET', 'login');
+        $form = $crawler->selectButton('Se connecter')->form();
+        $form->setValues(array(
+            '_username' => 'user_1',
+            '_password'   => 'user_1',
+        ));
+        $this->connectedClient->submit($form);
+    }  
+    
     public function testIndex()
     {
-        $client = static::createClient();
+        $this->connectedClient->request('GET', '/');
 
-        $crawler = $client->request('GET', '/');
-
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $this->assertContains('Welcome to Symfony', $crawler->filter('#container h1')->text());
+        $this->assertTrue($this->connectedClient->getResponse()->isSuccessful());
     }
 }
